@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="./.github/logo-full.svg" width="350" heigh="100" alt="logo letmeask">
+    <img src="./.github/logo-full.svg" width="260px" alt="logo letmeask">
 </h1>
 
 <h4 align="center">
@@ -14,18 +14,12 @@
     <img alt="GitHub" src="https://img.shields.io/github/license/pedrojrodrigues/NLW-Together-letmeask?color=%23e559f9&style=for-the-badge&labelColor=835afd">
 </p>
 
-<br>
-
 <h1 align="center">
     <img alt="Letmeask" src=".github/capa.svg" />
 </h1>
 
-<br>
-
 # Letmeask <img src="./.github/box-message-logo.svg" width="28" alt="logo icon">
 Toda pergunta tem uma resposta. Aprenda e compartilhe conhecimento com outras pessoas. Letmeask é perfeito para criadores de conteúdos poderem criar salas de Q&A com o seu público, de uma forma muito organizada e democrática. 🚀
-
-<br>
 
 ## 🧪 Tecnologias
 
@@ -66,7 +60,7 @@ Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para
 
 ---
 
-## Author
+## ✒️ Author
 
 <a href="https://github.com/pedrojrodrigues">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/53826489?s=460&u=834aa9912aaaa1464d4635cb9fa7767c64a6e9b3&v=4" width="100px;" alt=""/>
