@@ -8,6 +8,8 @@
   cursor: pointer;
 
   display: flex;
+  width: 230px;
+  transition: 0.2s;
 
   div {
     background: #835afd;
@@ -23,8 +25,29 @@
     align-self: center;
     flex: 1;
     padding: 0 16px 0 12px;
-    width: 230px;
     font-size: 14px;
     font-weight: 500;
+    
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    transition: 0.1s;
+  }
+
+  &:active {
+    span {
+      font-size: 13px;
+    }
+  }
+  @media (min-width: 1000px) {
+    &:hover {
+      width: 280px;
+      span {
+        width: 240px;
+        text-overflow: initial;
+        overflow: visible;
+      }
+    }
   }
 }

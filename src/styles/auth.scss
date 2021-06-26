@@ -59,9 +59,19 @@
       align-self: center;
     }
 
+    .profile-img {
+      border-radius: 50%;
+      border: 3px solid #835afd;
+      margin-top: 2rem;
+    }
+
+    span {
+      margin-top: 1rem;
+    }
+
     h2 {
       font-size: 24px;
-      margin: 64px 0 24px;
+      margin: 2rem 0 1.5rem;
       font-family: 'Poppins', sans-serif;
     }
 
