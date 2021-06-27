@@ -1,4 +1,31 @@
 #page-room {
+  &.dark {
+    background: #212529;
+    height: 100vh;
+
+    .room-title {
+      
+      h1 {
+        color: #FFF;
+      }
+    }
+
+    form {
+      textarea {
+        background-color: #899095;
+        color: #dee2e6;
+
+        &::-webkit-input-placeholder {
+          color: #dee2e6;
+        }
+      } 
+
+      > span {
+        color: #FFF;
+      }
+    }
+  }
+
   header {
     padding: 24px;
     border-bottom: 1px solid #e2e2e2;

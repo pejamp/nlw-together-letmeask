@@ -2,6 +2,7 @@ import { useHistory } from 'react-router-dom';
 
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
+import logoWhiteImg from '../assets/images/white-logo.svg';
 import googleIconImg from '../assets/images/google-icon.svg';
 
 import '../styles/auth.scss';
@@ -60,7 +61,7 @@ export function Home() {
         <div className="main-content">
           <button onClick={toggleTheme}>Toggle</button>
 
-          <img src={logoImg} alt="Letmeask" />
+          <img src={theme === 'light' ? logoImg : logoWhiteImg} className="alternative-svg" alt="Letmeask" />
           <button onClick={handleCreateRoom} className="create-room">
             <img src={googleIconImg} alt="Logo do Google" />
             Crie sua sala com o Google

@@ -2,12 +2,14 @@ import { useEffect } from 'react';
 import { FormEvent, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logoImg from '../assets/images/logo.svg';
+import logoWhiteImg from '../assets/images/white-logo.svg';
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
 import { useAuth } from '../hooks/useAuth';
 import { useRoom } from '../hooks/useRoom';
 import { database } from '../services/firebase';
+import { useTheme } from '../hooks/useTheme';
 
 import '../styles/room.scss';
 
@@ -19,6 +21,8 @@ export function Room() {
   const { user } = useAuth();
   const params = useParams<RoomParams>();
   const [newQuestion, setNewQuestion] = useState('');
+
+  const { theme, toggleTheme } = useTheme();
 
   const roomId = params.id;
 
@@ -61,11 +65,12 @@ export function Room() {
   }
 
   return (
-    <div id="page-room">
+    <div id="page-room" className={theme}>
       <header>
         <div className="content">
-          <img src={logoImg} alt="Letmeask" />
+          <img src={theme === 'light' ? logoImg : logoWhiteImg} className="alternative-svg" alt="Letmeask" />
           <RoomCode code={params.id} />
+          <button onClick={toggleTheme}>Toggle</button>
         </div>
       </header>
 
